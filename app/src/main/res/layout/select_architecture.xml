@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Kullanmak istediğiniz mimari :"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rdGroupArchitecture"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp">
+
+        <RadioButton
+            android:id="@+id/rdNonArchitecture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Non-Architecture" />
+
+        <RadioButton
+            android:id="@+id/rdMvc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MVC" />
+
+        <RadioButton
+            android:id="@+id/rdMvp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MVP" />
+
+        <RadioButton
+            android:id="@+id/rdMvvm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MVVM" />
+    </RadioGroup>
+
+</LinearLayout>
